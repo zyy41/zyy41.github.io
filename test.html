@@ -1,21 +1,12 @@
 <html>
     <body>
-        <script>
-function reduce(array, combine, start) {
-    var current = start;//6
-    for (var element of array) {
-        current = combine(current, element);
-    }
-    return current;
-} 
-var max=function(data){
-    return reduce(
-        data, 
-        function(a,b){
-            return a>b.credit?a:b.credit;
-            }
-        , 10)
-}
+       <ul>
+       </ul>
+        <script src="jquery-3.4.1.js"></script>
+        <script src="underscore.js"></script>
+
+    <script>
+
 
 var data=[
     {name:'计算机安装与维护',credit:2}
@@ -24,12 +15,20 @@ var data=[
     ,{name:'大学英语',credit:2}
     ,{name:'软件技术导论',credit:2}
 ];
-console.log(max(data));
+
+$(function(){
+    _.each(data, function(item){
+        $("ul").append("<li>"+item.name+"(学分："+item.credit+")"+"</li>");
+    });
+  
+
+})
 
 
 
 
-        </script>
-         
+    </script>
+
+
     </body>
 </html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table align="center" width="337" height="204" border="0">
+        <tr>
+          <td width="108">用户名:</td>
+          <td width="213"><form name="form1" method="post" action="">
+            <input type="text" name="textfield" onfocus="txtfocus()" onBlur="txtblur()">
+          </form></td>
+        </tr>
+        <tr>
+          <td>密码:</td>
+          <td><form name="form2" method="post" action="">
+            <input type="text" name="textfield2" onfocus="txtfocus()" onBlur="txtblur()">
+          </form></td>
+        </tr>
+        <tr>
+          <td>真实姓名:</td>
+          <td><form name="form3" method="post" action="">
+            <input type="text" name="textfield3" onfocus="txtfocus()" onBlur="txtblur()">
+          </form></td>
+        </tr>
+        <tr>
+          <td>性别:</td>
+          <td><form name="form4" method="post" action="">
+            <input type="text" name="textfield5" onfocus="txtfocus()" onBlur="txtblur()">
+          </form></td>
+        </tr>
+        <tr>
+          <td>邮箱:</td>
+          <td><form name="form5" method="post" action="">
+            <input type="text" name="textfield4" onfocus="txtfocus()" onBlur="txtblur()">
+          </form></td>
+        </tr>
+      </table>
+      <script type="text/javascript">
+     function txtfocus(event){
+         var   a=window.event;
+         var obj=a.srcElement;
+         obj.style.background="#FFFF66";
+     }
+     function txtblur(event){
+         var   a=window.event;
+         var obj=a.srcElement;
+         obj.style.background="#FFFFFF";
+     }
+    </script>
+</body>
+</html>

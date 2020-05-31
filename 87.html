@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>  
+   function Mycheck(){
+    var a="获取内容如下:\n";
+    if(document.form1.文章作者.value!=""){
+        a+="作者名称："+document.form1.文章作者.value
+    }
+    a+="\n文章主题："+document.form1.文章主题.value
+    
+    a+="\n文章内容："+document.form1.文章内容.value
+    
+    a+="\n"+document.form1.隐藏域.value
+       
+      alert(a)
+      
+
+
+   }
+</script>
+<body style="font-size:12px">
+    <table width="50%"  border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="left" valign="top"><table width="95%"  border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td height="22" align="left"><img src="images/dian.gif" width="7" height="7"> 文章添加</td>
+          </tr>
+          <tr>
+            <td height="1"><img src="images/xian.gif" width="366" height="1"></td>
+          </tr>
+        </table>
+          <br>
+          <table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+            <form name="form1" onSubmit="Mycheck()">
+              <tr>
+                <td height="28" align="right">作者名称:</td>
+                <td height="28"><input name="文章作者" type="text" class="textbox" id="文章作者"></td>
+              </tr>
+              <tr>
+                <td height="28" align="right">文章主题:</td>
+                <td height="28"><input name="文章主题" type="text" id="文章主题" class="textbox"></td>
+              </tr>
+              <tr>
+                <td height="22" align="right">文章内容:</td>
+                <td height="22"><textarea name="文章内容" cols="45" rows="6" id="文章内容"></textarea></td>
+              </tr>
+              <tr>
+                <td height="28" colspan="2" align="center"><input name="隐藏域" type="hidden" id="隐藏域" value="文章添加成功!">
+                <input name="add" type="submit" class="button" id="add" value="添 加">
+    &nbsp;
+            <input type="reset" name="Submit2" value="重 置" class="button"></td>
+              </tr>
+            </form>
+        </table></td>
+      </tr>
+    </table>
+    </body>
+</html>

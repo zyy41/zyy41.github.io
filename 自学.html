@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form1" method="post" action="">
+        <input name="textfield" type="text" size="23" value="JavaScript自学视频教程">
+        <select name="menu1" onChange="Fcolor()">
+          <option value="pink">黑</option>
+          <option value="yellow">黄</option>
+          <option value="skyblue">蓝</option>
+          <option value="lightgreen">绿</option>
+          <option value="red">红</option>
+          <option value="purple">紫</option>
+        </select>
+      </form>
+      <script type="text/javascript">
+         function Fcolor(){
+             var a=window.event;
+             var obj=e.srcElement;
+             form1.textfield.style.color=obj.options[obj.selectedIndex].value;
+         }
+
+      </script>
+</body>
+</html>
